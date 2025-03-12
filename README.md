@@ -40,11 +40,13 @@ This project parallelizes the simulation using MPI, distributing the workload ac
 - Processors: 1, 2, 4, 8, 16, 32
 - Achieved near-linear speedup up to 8 processors.
 - Speedup plateaus at 16+ due to communication overhead.
+![Alt Text](Images/Strong Scaling Speedup vs processors.png)
+![Alt Text](Images/Strong Scaling WCT vs processors.png)
 
 ### Weak Scaling
 - Scaled problem size with processor count.
 - Runtime grows as processor count increases, due to ghost cell communication and load imbalance.
-
+![Alt Text](Images/Weak Scaling Runtime vs Ideal.png)
 ---
 
 ## Hardware & Parameters
